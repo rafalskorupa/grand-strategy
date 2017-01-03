@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Provinces
+      </th>
+      <th>
+        Population
+      </th>
+    </tr>
+  </thead>
+  <% states.each do |state| %>
+    <tr>
+      <td>
+        <%=link_to state.name, state%>
+      </td>
+      <td>
+        <%=state.total_provinces%>
+      </td>
+      <td>
+        <%=state.total_population%>
+      </td>
+    </tr>
+  <% end %>
+</table>

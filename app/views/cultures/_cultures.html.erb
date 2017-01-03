@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Population
+      </th>
+    </tr>
+  </thead>
+  <% cultures.each do |culture| %>
+    <tr>
+      <td>
+        <%= culture.name %>
+      </td>
+      <td>
+        <%= culture.total_population %>
+      </td>
+    </tr>
+
+  <% end %>
+</table>

@@ -1,0 +1,42 @@
+<table>
+  <thead>
+  <td>
+    Quantity
+  </td>
+  <td>
+    Focus
+  </td>
+  <td>
+    Culture
+  </td>
+  <td>
+    Location
+  </td>
+  <td>
+    Happiness
+  </td>
+  </thead>
+  <tbody>
+    <% populations.each do |population| %>
+      <div id="population<%=population.id%>">
+        <tr>
+          <td>
+            <%= population.quantity %>
+          </td>
+          <td>
+            <%= population.focus %>
+          </td>
+          <td>
+            <%= population.culture.name %>
+          </td>
+          <td>
+            <%= population.province.name %>
+          </td>
+          <td>
+            <%= population.happiness %>
+          </td>
+        </tr>
+      </div>
+    <% end %>
+  </tbody>
+</table>

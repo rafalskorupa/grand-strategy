@@ -1,0 +1,36 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Terrain
+      </th>
+      <th>
+        Population
+      </th>
+      <th>
+        State
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% provinces.each do |province| %>
+      <tr>
+        <td>
+          <%= link_to province.name, province %>
+        </td>
+        <td>
+          <%= province.terrain %>
+        </td>
+        <td>
+          <%= province.total_population %>
+        </td>
+        <td>
+          <%= link_to province.state.name, province.state %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

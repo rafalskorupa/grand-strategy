@@ -6,6 +6,7 @@ class State < ApplicationRecord
 
 
   def total_provinces
+    0 unless provinces
     provinces.count
   end
 
